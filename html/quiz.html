@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/quiz.css">
+    <title>Title</title>
+</head>
+<body>
+<div class="valley" style="background-color: lime; display: flex; max-width: 150px; margin: 10px; border-radius: 15px; text-align: center; justify-content: center">
+    <h1 class="hours">00</h1>
+    <h1>:</h1>
+    <h1 class="minutes">00</h1>
+    <h1>:</h1>
+    <h1 class="seconds">00</h1>
+</div>
+
+<div class="effrigies">
+    <div>
+        <span><img src="../../../image1.jpg" alt=""></span>
+        <span><img src="../../../image2.jpg" alt=""></span>
+        <span><img src="../../../image3.jpg" alt=""></span>
+
+    </div>
+    <div>
+        <span><img src="../../../image1.jpg" alt=""></span>
+        <span><img src="../../../image2.jpg" alt=""></span>
+        <span><img src="../../../image3.jpg" alt=""></span>
+
+    </div>
+</div>
+
+<div class="container">
+    <a href="project-file.html"><img src="https://www.svgrepo.com/show/97099/left-arrow.svg" width="50px" style="position: absolute; left: 100px; top: 100px " alt=""></a>
+
+    <form action="">
+        <i class="fas fa-paper-plane"><img src="https://newsofrussia.ru/wp-content/uploads/2022/11/kak-nastroit-proxy-telegram-1.png" style="width: 70px; padding: 0" alt=""></i>
+        <div class="input-group">
+            <label>Full Name</label>
+            <input type="text" placeholder="Enter your name" id="contact-name" onkeyup="validateName()">
+            <span id="name-error"></span>
+        </div>
+        <div class="input-group">
+            <label >ResetPassword No.</label>
+            <input type="text" placeholder="Enter youur number" id="contact-phone" onkeyup="validatePhone()">
+            <span id="phone-error"></span>
+            <br>
+        </div>
+        <div class="input-group">
+            <label>Email id</label>
+            <input type="text" placeholder="Enter email" id="contact-email" onkeyup="validateEmail()">
+            <span id="email-error"></span>
+        </div>
+        <div class="input-group">
+            <label >Your feedback</label>
+            <textarea rows="5" placeholder="Enter your message" id="contact-mess" onkeyup="validateMess()"></textarea>
+            <span id="mess-error"></span>
+        </div>
+        <button onclick="validateFix()" >Submit</button>
+        <span id="fix-error" ></span>
+    </form>
+</div>
+
+<script src="js/quiz.js"></script>
+</body>
+
+</html>
